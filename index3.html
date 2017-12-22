@@ -73,13 +73,22 @@
 
    <script>
 
-    var a = function Add() {
-    
-    } 
+    function onLoad() {
+        var a = function Add() {
+        var b;    
+        return function () {
+            b +=1;
+        }
+      
+        console.log(a());
+
+      }  
+    }
+     
    </script>
     
 </head>
-<body>
+<body onload=onLoad()>
   
   <header>Header</header>
   
