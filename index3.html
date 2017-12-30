@@ -52,10 +52,19 @@
 
             }
 
-            // call back function
+            // call back function #case 1
             setInterval( function() {
                 console.log(‘every 1 second run’);
             }, 1000);
+
+
+            // call back function #case 2
+            var cb = function() {
+                console.log(‘every 1 second run’);
+            }
+            setInterval(cb, 1000);
+
+
 
         }
     </script>
