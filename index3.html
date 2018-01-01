@@ -67,6 +67,16 @@
             }
             setInterval(cb, 1000);
 
+            var d = { 
+                e: function() {
+                    function f() {
+                        console.log(this);
+                    }
+                    f();
+                }
+            }
+            d.e();
+
 
         }
     </script>
