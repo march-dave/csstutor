@@ -62,20 +62,29 @@
 
 
             // call back function #case 2
-            var cb = function() {
-                console.log('every 1 second run' + this);
-            }
-            setInterval(cb, 1000);
+            // var cb = function() {
+            //     console.log('every 1 second run' + this);
+            // }
+            // setInterval(cb, 1000);
 
-            var d = { 
-                e: function() {
-                    function f() {
-                        console.log(this);
-                    }
-                    f();
+            // var d = { 
+            //     e: function() {
+            //         function f() {
+            //             console.log(this);
+            //         }
+            //         f();
+            //     }
+            // }
+            // d.e();
+
+            function setName(name) {
+                return function() {
+                    return name;
                 }
             }
-            d.e();
+
+            var sayMyName = setName('John Doe');
+            sayName();
 
 
         }
