@@ -104,7 +104,14 @@
                 return this.age;
             }
 
-            
+            var p = new People('Jane Doe', 22);
+            p.addAge();
+            p.getAdd();
+
+            p.__proto__.age = 50;
+            p.__proto__.addAge();
+            p.__proto__.getAdd();
+
 
 
 
