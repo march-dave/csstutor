@@ -91,20 +91,36 @@
             obj.constructor.name = 'Jane';
 
 
-            function People() {
-
+            function People(n, a) {
+                this.name = a;
+                this.age = a;
             }
 
-            add.prototype.getName = function() {}
+            People.prototype.addAge = function() {
+                this.age += 1;
+            }
 
-            var person = new People();
+            People.prototype.getAge = function() {
+                return this.age;
+            }
 
-            function Person() {} // => 함수
-            var personObject = new Person(); // => 함수로 객체를 생성
+            
 
-            Person.__proto__.age = 10;
 
-            personObject.setAge = funciton() {}
+
+            // add.prototype.getName = function() {}
+
+            // var person = new People();
+
+            // function Person() {} // => 함수
+            // var personObject = new Person(); // => 함수로 객체를 생성
+
+            // Person.__proto__.age = 10;
+
+            // personObject.setAge = funciton() {}
+
+
+
 
 
         }
