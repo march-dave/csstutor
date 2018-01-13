@@ -104,33 +104,29 @@
                 return this.age;
             }
 
+            People.prototype.getThis = function() {
+                return this;
+            }
+
             var p = new People('Jane Doe', 22);
             p.addAge();
             p.getAdd();
 
             People.prototype.age = 11;
 
+
+            console.log(p.age);
+            console.log(People.prototype.age);
+            console.log(p.getThis())
+
+
+
             
 
 
 
 
-            
-
-
-
-
-            // add.prototype.getName = function() {}
-
-            // var person = new People();
-
-            // function Person() {} // => 함수
-            // var personObject = new Person(); // => 함수로 객체를 생성
-
-            // Person.__proto__.age = 10;
-
-            // personObject.setAge = funciton() {}
-
+           
 
 
 
