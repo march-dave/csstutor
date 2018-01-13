@@ -8,7 +8,15 @@
     
       function onStart() {
 
-        console.log('start');
+        function people(a, n) {
+          this.age = a;
+          this.name = n;
+        }
+
+        people.prototype.getName = function(){
+           return this.name;
+        };
+
 
       }
 
