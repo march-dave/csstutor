@@ -27,11 +27,12 @@
 
         function person() {
 
+          People.apply(this, argument);
+
         }
 
-        person.prototype = new people();
-        person.prototype.constructor = person;
-
+        // person.prototype = new people();
+        // person.prototype.constructor = person;
 
 
       }
