@@ -27,6 +27,9 @@
 
         function person() {
 
+          console.log('this: '  this);
+          console.log('argument: ' argument );
+
           People.apply(this, argument);
 
         }
