@@ -27,8 +27,8 @@
 
         function person() {
 
-          console.log('this: '  this);
-          console.log('argument: ' argument );
+          console.log('this: ' + this);
+          console.log('argument: ' + argument );
 
           People.apply(this, argument);
 
@@ -42,6 +42,8 @@
         person.prototype.city = 'NY';
 
         person.prototype.tel = '1111';
+
+      console.log('onStart');
 
       }
 
