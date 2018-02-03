@@ -14,14 +14,14 @@ var extendClass = (function() {
 
     }
 })();
- 
+
 
 function Person(name, age) {
     this.name = name || 'unknown name';
     this.age = age || 'unknown age';
 }
 
- 
+
 Person.prototype.getName = function() {
     return this.name;
 }
@@ -36,13 +36,13 @@ function Employee(name, age, position) {
     this.superClass(name, age);
     this.position = position || 'unknown position';
 }
- 
+
 extendClass(Person, Employee);
 
 Employee.prototype.getPosition = function() {
     return this.position;
 }
- 
+
 
 class Person {
 
@@ -71,3 +71,5 @@ class human {
 }
 
 humam.prototype.address = 'NY';
+humam.prototype.address2 = 'NJ';
+humam.prototype.address3 = 'SF';
