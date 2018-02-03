@@ -22,12 +22,10 @@ function Person(name, age) {
 }
 
  
-
 Person.prototype.getName = function() {
     return this.name;
 }
 
- 
 
 Person.prototype.getAge = function() {
     return this.age;
@@ -39,13 +37,11 @@ function Employee(name, age, position) {
     this.position = position || 'unknown position';
 }
  
-
 extendClass(Person, Employee);
 
 Employee.prototype.getPosition = function() {
     return this.position;
 }
-
  
 
 class Person {
@@ -53,7 +49,6 @@ class Person {
     constructor(name, age) {
 
         this.name = name || 'unknow name';
-
         this.age = age || 'unknow age';
 
     }
@@ -71,6 +66,8 @@ class Person {
 class human {
 
     constructor(name, age, gender) {
-        
+
     }
 }
+
+humam.prototype.address = 'NY';
