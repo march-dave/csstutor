@@ -73,3 +73,4 @@ class human {
 humam.prototype.address = 'NY';
 humam.prototype.address2 = 'NJ';
 humam.prototype.address3 = 'SF';
+humam.prototype.address4 = 'CA';
