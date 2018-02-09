@@ -77,7 +77,18 @@ humam.prototype.address4 = 'CA';
 humam.prototype.address4 = 'UT';
 humam.prototype.address5 = 'HW';
 humam.prototype.address5 = 'OH';
-humam.prototype.address5 = 'OH';
-humam.prototype.address5 = 'OH';
-humam.prototype.address5 = 'OH';
-humam.prototype.address5 = 'OH';
+
+
+function a(x, y, z) {
+    console.log(this, x, y, z);
+}
+
+var b = {
+    c: 'eee'
+};
+
+a.call(b, 1, 2, 3);
+a.apply(b, [1, 2, 3]);
+
+var c = a.bind(b);
+c(1, 2, 3);
