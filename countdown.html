@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+        <br>
+        <!-- Add your site or application content here -->
+        <div class="sc-hosRMf jknDzv">
+            <div class="sc-yYDw prhNDL sc-hbXRk jXMCGy">
+                <div class="sc-lwzBjH rlweaMqr">
+                    <div class="sc-uNBRjo TzRVSc"><span>EUR 0.02</span> Token Sale increases to <span>EUR 0.05 </span> In </div>
+                    <div class="sc-hrNwgD wmSRmp">
+                        <div id="days"></div>
+                        <div>days</div>
+                    </div>
+                    <div class="sc-hrNwgD wmSRmp">
+                        <div id="hours"></div>
+                        <div>hours</div>
+                    </div>
+                    <div class="sc-hrNwgD wmSRmp">
+                        <div id="minutes"></div>
+                        <div>minutes</div>
+                    </div>
+                    <div class="sc-dqsTxo wmSRmp">
+                        <div id="seconds"></div>
+                        <div>seconds</div>
+                    </div>
+                </div>
+                <button class="sc-krDserM VmFEh sc-mhASt luiXrO" onclick="window.location.href='https://ico.gscplatform.io'">Contribute now</button></div>
+        </div>
+        <a class="sc-IJumbe evrJVq" href="https://t.me/GSVAviationOfficial" target="_blank">
+            <img width="20" height="20" src="images/telegramlogo1.png">
+        </a>
+
+
+        <div class="container">
+            <!-- <div id="head"><span>EUR 0.02</span> Token Sale increases to <span>EUR 0.05 </span> In</div> -->
+            <ul>
+                <!-- <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li> -->
+            </ul>
+        </div>
+
+        <script>
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            let countDown = new Date('July 24, 2018 00:00:00').getTime(),
+                x = setInterval(function() {
+
+                    let now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById('days').innerText = Math.floor(distance / (day)),
+                        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+                    //do something later when date is reached
+                    //if (distance < 0) {
+                    //  clearInterval(x);
+                    //  'IT'S MY BIRTHDAY!;
+                    //}
+
+                }, second)
+        </script>
+
+    </body>
+</body>
+
+</html>
