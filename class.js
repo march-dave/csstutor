@@ -1,6 +1,4 @@
 
- 
-
 class Employee extends Person {
 
     constructor(name, age, position) {
@@ -11,12 +9,8 @@ class Employee extends Person {
 
     }
 
- 
-
     getPosition() {
-
         return this.position;
-
     }
 
 }
