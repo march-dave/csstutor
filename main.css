@@ -19,3 +19,9 @@ div.exe2 {
     height: 110px;
     overflow: visible;
 }
+
+div.exe3 {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+}
