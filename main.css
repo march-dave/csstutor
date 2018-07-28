@@ -42,7 +42,8 @@ div.exe4 {
     text-align: center;
 }
 
-#btn a:hover {
+#btn a:hover,
+#btn a:active {
     background: tomato;
     color: #fff;
 }
