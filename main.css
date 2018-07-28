@@ -46,3 +46,8 @@ div.exe4 {
     background: tomato;
     color: #fff;
 }
+
+#btn a:actve {
+    background: #939;
+    color: #fff;
+}
